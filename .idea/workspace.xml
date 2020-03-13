@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79621c1-6c29-43f8-8de0-bc885b9ec395" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajouter des data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_sar6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_test_0311.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_test_0311_rate10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_test_0810.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_test_2411_rate10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_test_2902_rate10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_training_0311.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_training_2411.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_training_2902.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/5min.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/csv - Copy - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/csv - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/csv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas_boillinger1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas_boillinger2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas_sar.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas_sar2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/datas_sar3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/first_datas.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas_ema.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas_sar4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tradingview_scraper - Copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tradingview_scraper - Copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tradingview_scraper.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +16,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -57,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tradingview_scraper - Copy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="120" lean-forward="true" selection-start-line="21" selection-start-column="120" selection-end-line="21" selection-end-column="120" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#232#262#0" expanded="true" />
               </folding>
@@ -67,34 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_training/data_training_0311.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_training/data_training_0803-good.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_training/data_training_0803.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/macdtrader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -169,7 +122,6 @@
         <option value="$PROJECT_DIR$/data_test_2902_rate10.csv" />
         <option value="$PROJECT_DIR$/data_test_2411_rate10.csv" />
         <option value="$PROJECT_DIR$/add_prediction.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/data_test_0311_rate10.csv" />
         <option value="$PROJECT_DIR$/data_training_2902-all.csv" />
         <option value="$PROJECT_DIR$/data_training_2902.csv" />
@@ -179,6 +131,7 @@
         <option value="$PROJECT_DIR$/data_training_0903-macd.csv" />
         <option value="$PROJECT_DIR$/macdtrader.py" />
         <option value="$PROJECT_DIR$/tradingview_scraper - Copy.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -495,16 +448,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/tets.py" />
-    <entry file="file://$PROJECT_DIR$/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1565">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tradingview_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -582,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_test_0311_rate10.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
@@ -597,13 +533,6 @@
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_test_2411_rate10.csv">
@@ -629,7 +558,7 @@
     <entry file="file://$PROJECT_DIR$/macdtrader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -654,16 +583,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tradingview_scraper - Copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="120" lean-forward="true" selection-start-line="21" selection-start-column="120" selection-end-line="21" selection-end-column="120" />
-          <folding>
-            <element signature="e#232#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_training/data_training_0311.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -677,9 +596,47 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_training/data_training_0803.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tradingview_scraper - Copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#232#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2166">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
       </provider>
     </entry>
   </component>
