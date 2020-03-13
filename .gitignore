@@ -1,7 +1,1 @@
 venv
-add_prediction.py
-analyse_boillinger.py
-analyse_sar_kl.py
-data_collection_boillinger.py
-driver.py
-macdtrader.py
