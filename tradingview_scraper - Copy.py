@@ -48,7 +48,7 @@ def get_values():
 def create_csv(data_id, values):
     """Create the csv file and add the first row if the file does not exist yet."""
     row = [key for key in values.keys()]
-    if not os.path.exists("data_training_" + data_id + ".csv"):
+    if not os.path.exists("data_training/data_training_" + data_id + ".csv"):
         with open("data_training_" + data_id + ".csv", "w", newline="") as write_file:
             writer = csv.writer(write_file)
             writer.writerow(row)
@@ -57,7 +57,7 @@ def create_csv(data_id, values):
 def edit_csv(values):
     """Add a new line to the csv file."""
     row = [val for val in values.values()]
-    with open("data_training_" + data_id + ".csv", "a", newline="") as write_file:
+    with open("data_training/data_training_" + data_id + ".csv", "a", newline="") as write_file:
         writer = csv.writer(write_file)
         writer.writerow(row)
 
