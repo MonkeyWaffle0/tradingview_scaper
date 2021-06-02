@@ -1,11 +1,11 @@
-from Constants import SHORT, LONG
+from Constants import SHORT, LONG, BUY, SELL
 
 
 class Trader:
     def __init__(self):
         self.wallet = 1000.0
         self.previous_wallet = self.wallet
-        self.crypto_wallet = 1000.0
+        self.crypto_wallet = 500.0
         self.previous_crypto_wallet = self.crypto_wallet
         self.bought = 0
         self.sold = 0
@@ -21,7 +21,7 @@ class Trader:
         self.stop_loss = 0
         self.goal = 0
 
-    def update_stop_loss(self, price, action):
+    def update_stop_loss(self, price, action, ema):
         if action == LONG:
             self.stop_loss = price * (1 - self.stop_loss_rate)
             self.goal = price * (1 + self.goal_rate)
@@ -29,7 +29,7 @@ class Trader:
             self.stop_loss = price * (1 + self.stop_loss_rate)
             self.goal = price * (1 - self.goal_rate)
 
-    def enter_long(self, price):
+    def enter_long(self, price, ema):
         previous_wallet = self.wallet
         trading_wallet = self.wallet / 2
         self.handle_fees(trading_wallet, LONG)
@@ -38,10 +38,10 @@ class Trader:
         self.crypto_wallet += self.bought
         self.log_entered(self.bought, price, 'Bought')
         self.current_state = LONG
-        self.update_stop_loss(price, LONG)
+        self.update_stop_loss(price, LONG, ema)
         self.previous_wallet = previous_wallet
 
-    def enter_short(self, price):
+    def enter_short(self, price, ema):
         previous_crypto_wallet = self.crypto_wallet
         trading_wallet = self.crypto_wallet / 2
         self.handle_fees(trading_wallet, SHORT)
@@ -50,12 +50,12 @@ class Trader:
         self.wallet += self.sold
         self.log_entered(self.sold, price, 'Sold')
         self.current_state = SHORT
-        self.update_stop_loss(price, SHORT)
+        self.update_stop_loss(price, SHORT, ema)
         self.previous_crypto_wallet = previous_crypto_wallet
 
     def buy_back(self, price):
         previous_wallet = self.wallet
-        self.handle_fees(self.sold, LONG)
+        self.handle_fees(self.sold, BUY)
         buying_amount = self.convert_to_crypto(self.sold, price)
         self.wallet -= buying_amount * price
         self.crypto_wallet += buying_amount
@@ -67,7 +67,7 @@ class Trader:
 
     def sell_back(self, price):
         previous_crypto_wallet = self.crypto_wallet
-        self.handle_fees(self.bought, SHORT)
+        self.handle_fees(self.bought, SELL)
         selling_amount = self.convert_to_money(self.bought, price)
         self.wallet += selling_amount
         self.crypto_wallet -= selling_amount / price
@@ -116,6 +116,12 @@ class Trader:
             self.wallet -= fees
         elif action == SHORT:
             self.crypto_wallet -= fees
+        elif action == BUY:
+            self.wallet -= fees
+            self.sold -= fees
+        elif action == SELL:
+            self.crypto_wallet -= fees
+            self.bought -= fees
 
     def calculate_total_gain(self):
         return sum(self.gains) - sum(self.losses)
