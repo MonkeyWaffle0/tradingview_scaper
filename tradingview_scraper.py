@@ -15,34 +15,34 @@ def get_values():
 
     # Closing price
     price = driver.find_element_by_xpath(
-        "/html/body/div[2]/div[1]/div[3]/div[1]/div/table/tr[1]/td[2]/div/div[2]/div[1]/div[2]/div/div[4]/div[2]"
+        "/html/body/div[2]/div[1]/div[2]/div[1]/div/table/tr[1]/td[2]/div/div[1]/div[1]/div[1]/div[2]/div/div[5]/div[2]"
     ).text
 
-    sar = driver.find_element_by_xpath(
-        "/html/body/div[2]/div[1]/div[3]/div[1]/div/table/tr[1]/td[2]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div"
+    supertrendSell = driver.find_element_by_xpath(
+        "/html/body/div[2]/div[1]/div[2]/div[1]/div/table/tr[1]/td[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div"
     ).text
 
-    dif_sar = float(price) - float(sar)
+    supertrendBuy = driver.find_element_by_xpath(
+        "/html/body/div[2]/div[1]/div[2]/div[1]/div/table/tr[1]/td[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div[1]/div"
+    ).text
+
+    ema = driver.find_element_by_xpath(
+        "/html/body/div[2]/div[1]/div[2]/div[1]/div/table/tr[1]/td[2]/div/div[1]/div[2]/div[2]/div[3]/div[2]/div/div/div"
+    ).text
 
     rsi = driver.find_element_by_xpath(
-        "/html/body/div[2]/div[1]/div[3]/div[1]/div/table/tr[3]/td[2]/div/div[2]/div/div[2]/div[2]/div[3]/div/div/div"
+        "/html/body/div[2]/div[1]/div[2]/div[1]/div/table/tr[3]/td[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div[1]/div"
     ).text
 
-    macd = driver.find_element_by_xpath(
-        "/html/body/div[2]/div[1]/div[3]/div[1]/div/table/tr[5]/td[2]/div/div[2]/div/div[2]/div[2]/div[3]/div/div[1]/div"
-    ).text
+    rsi = rsi.replace("−", "")
 
-    macd = macd.replace("−", "-")
-    macd = float(macd) * 1000
-
-    values = {
+    return {
         "price": price,
-        "sar": dif_sar,
+        "supertrendSell": supertrendSell,
+        "supertrendBuy": supertrendBuy,
         "rsi": rsi,
-        "macd": macd
+        "ema": ema
     }
-
-    return values
 
 
 def create_csv(data_id, values):
@@ -56,6 +56,7 @@ def create_csv(data_id, values):
 
 def edit_csv(values):
     """Add a new line to the csv file."""
+    print(values)
     row = [val for val in values.values()]
     with open("data_training/data_training_" + data_id + ".csv", "a", newline="") as write_file:
         writer = csv.writer(write_file)
