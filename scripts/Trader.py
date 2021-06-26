@@ -1,4 +1,4 @@
-from Constants import SHORT, LONG, BUY, SELL
+from scripts.Constants import SHORT, LONG, BUY, SELL
 
 
 class Trader:
@@ -11,7 +11,7 @@ class Trader:
         self.sold = 0
 
         self.fees_rate = 0.001
-        self.stop_loss_rate = 0.01
+        self.stop_loss_rate = 0.05
         self.goal_rate = self.stop_loss_rate * 1.5
 
         self.current_state = None

@@ -1,8 +1,8 @@
 import csv
 
-from Constants import BUY, SELL, LONG, SHORT
-from DataAnalyzer import DataAnalyzer
-from Trader import Trader
+from scripts.Constants import BUY, SELL, LONG, SHORT
+from scripts.DataAnalyzer import DataAnalyzer
+from scripts.Trader import Trader
 
 
 class TradingBot:
@@ -27,7 +27,7 @@ class TradingBot:
 
 
 if __name__ == "__main__":
-    with open('data_training/data_training_0602-supertrend-linketh.csv') as file:
+    with open('../data_training/data_training_0530_supertrend.csv') as file:
         readCSV = csv.reader(file, delimiter=',')
         data = []
         for line in csv.DictReader(file):

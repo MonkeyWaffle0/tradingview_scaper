@@ -1,4 +1,4 @@
-from Constants import BUY, SELL
+from scripts.Constants import BUY, SELL
 
 
 class DataAnalyzer:
